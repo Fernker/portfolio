@@ -1,0 +1,441 @@
+//@import "reset";
+//@import "normalize";
+
+
+/* === Sass === */
+
+$skinny: 300px;
+
+
+$shadow: 0 0 1px black;
+
+$border-radius: 5px;
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+$base-spacing-unit: 15px;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+
+
+$mobile:       767px;
+$tablet:       900px;
+
+@mixin breakpoint($media-query){
+
+    @if $media-query == mobile{
+
+        @media only screen and (max-width:$mobile) { @content; }
+
+    }
+
+    @if $media-query == tablet{
+
+        @media only screen and (min-width:$mobile) and (max-width:$tablet) { @content; }
+
+    }
+
+    @if $media-query == tablet-and-down{
+
+        @media only screen and (max-width:$tablet) { @content; }
+
+    }
+
+
+}
+
+
+
+
+/* === Local Normalize === */
+
+.clearfix,
+%clearfix{
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+.clear{
+	clear: both;
+}
+
+/* === Fonts === */
+
+
+
+/* === Globals === */
+
+h1{
+	font-size: 3em;
+	margin: $base-spacing-unit 0;
+}
+
+h2{
+	font-size: 2em;
+	margin: $base-spacing-unit 0;
+}
+
+h3{
+	font-size: 1em;
+	//text-align: center;
+	margin: $base-spacing-unit 0;
+}
+
+p{
+	margin-bottom: $base-spacing-unit;
+}
+
+ul,ol,dd{
+    margin-left:2 * $base-spacing-unit;
+    margin-bottom: $base-spacing-unit;
+
+}
+
+li{
+    > ul,
+    > ol{
+         margin-bottom:0;
+     }
+}
+
+.center-content{
+	text-align: center;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+/* === Framework === */
+
+.full{
+	border-bottom: 1px solid black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	padding: 0 20px;
+	.body--touch &{
+		background-attachment: scroll;
+	}
+	&:nth-child(1){
+		background-image: url(../images/back1.jpg);
+		padding-top: 40px;
+		section,h1{
+			margin-top: 0;
+		}
+	}
+}
+
+
+
+section{
+	max-width: 1000px;
+	width: 100%;
+	//padding: 0 20px;
+	margin: 40px auto;
+	
+	&.boxed{
+		border: 1px solid black;
+		padding: 20px;
+		border-radius: 5px;
+	}
+
+	
+}
+
+.strike{
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		right: 0;
+		background: #000;
+		height: 1px;
+	}
+	h3{
+		display: inline;
+		background: #fff;
+		padding: 0 10px;
+		position: relative;
+	}
+}
+
+
+
+
+/* === Card === */
+
+.card{
+	background: #fff;
+	width: 100%;
+	@at-root{
+		&--header{
+			display: inline-block;
+			max-width: $skinny;
+			border: 1px solid black;
+			margin: 40px 0 40px 0;
+
+			border-radius: $border-radius;
+			padding: 10px;
+			img{
+				border-radius: 50%;
+				box-shadow: 0 0 0 4px #fff, 0 0 0 5px #000;
+				margin: 10px auto 20px;
+				display: block;
+			}
+		}
+		
+		//Work card showing a job or project I've done
+		&--work{
+			width: 100%;
+			min-height: 300px;
+			@extend %clearfix;
+			//padding: 15px;
+			//padding-bottom: 35px;
+			margin-bottom: $base-spacing-unit;
+			position: relative;
+			h1{
+				font-size: 2.5em;
+				margin: 0 0 $base-spacing-unit/2 0;
+			}
+			h2{
+				font-size: 1.5em;
+				margin: $base-spacing-unit/2 0;
+			}
+			h3{
+				font-size: .75em;
+				margin: $base-spacing-unit/2 0;
+			}
+
+
+			@at-root{
+				&__hero{
+					border-radius: $border-radius;
+					width: 300px;
+					float: left;
+					@include breakpoint(mobile){
+						float: none;
+						max-width: 100%;
+						margin-bottom: $base-spacing-unit;
+					}
+				}
+				&__content{
+					width: 50%;
+					width: calc(100% - 300px - 20px);
+					//background: lightgrey;
+					float: right;
+
+					position: relative;
+					@include breakpoint(mobile){
+						float: none;
+						width: 100%;
+						text-align: left;
+					}
+
+					
+				}
+
+				&__more{
+					content: 'Show More';
+					width: 150px;
+					//height: 20px;
+					background: red;
+					position: absolute;
+					left: 50%;
+					margin-left: -75px;
+					bottom: 0;
+					text-align: center;
+					padding: 3px 0;
+					z-index: 9;
+					cursor: pointer;
+
+				}
+			}
+		}
+
+
+	}
+
+}
+
+	/* === Sink to bottom === */
+
+	.sink{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		.btn{
+			margin-bottom: 5px;
+		}
+		span{
+			font-size: 11px;
+			display: block;
+			text-align: center;
+		}
+	}
+
+
+
+/* === SKILLZ === */
+
+.skills{
+	margin-bottom: $base-spacing-unit;
+	@at-root{
+		&__levels{
+			@include flexbox();
+			justify-content: space-between;
+			width: 81%;
+			margin: 0 auto;
+			@include breakpoint(mobile){
+				margin-left: 20%;
+			}
+			& span{
+				@include flex(auto);
+				text-align: right;
+				position: relative;
+				/*&:after{
+					content: '';
+					height: 100%;
+					background: red;
+					width: 1px;
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+				}*/
+			}
+		}
+		&__row{
+			margin-bottom: $base-spacing-unit;
+			*{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			@at-root{
+				&__skill{
+					width: 10%;
+					@include breakpoint(mobile){
+						width: 19%;
+						margin-right: 1%;
+					}
+				}
+
+				&__bar-holder{
+					width: 80%;
+					
+					@at-root{
+						&__bar{
+							height: 10px;
+							background: grey;
+							//width: 80%;
+						}
+					}
+				}
+
+				&__years{
+					width: 9%;
+					text-align: right;
+					float: right;
+					@include breakpoint(mobile){
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* === Social Bar === */
+
+.social-bar{
+	margin: 25px auto;
+	padding: 0;
+	width: $skinny;
+	//box-shadow: $shadow;
+	border-radius: 5px;
+	li{
+		float: left;
+		list-style: none;
+		width: 100px;
+		.btn{
+			margin: 0;
+			
+		}
+		&:nth-child(1) .btn{
+			border-radius: 5px 0 0 5px;
+		}
+		&:nth-child(2) .btn{
+			border-radius: 0;
+			border-left: 0;
+		}
+		&:nth-child(3) .btn{
+			border-radius: 0 5px 5px 0;
+			border-left: 0;
+		}
+	}
+}
+
+/* === Button === */
+
+.btn{
+	display: block;
+	height: 35px;
+	border: 1px solid #CCC;
+	color: #333;
+	background-color: #FFF;
+	margin: 10px;
+	border-radius: 5px;
+	padding-top: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	&:hover{
+		background-color: #ebebeb;
+		border-color: #adadad;
+	}
+	&:active{
+		box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	}
+	@at-root{
+		&--centered{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+

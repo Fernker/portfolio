@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolioApp">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+	<title>Kenny Fernsten | Portfolio</title>
+	<base href="/mine/portfolio/">
+	<style>
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+		    display: none !important;
+		}
+	</style>
+	<link href="build/css/portfolio.min.css" >
+  </head>
+
+</head>
+<body ng-cloak>
+	Hello World
+	<ng-view></ng-view>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+	<script src="https://code.angularjs.org/1.4.2/angular-sanitize.js"></script>
+	<script src="https://code.angularjs.org/1.4.2/angular-route.js"></script>
+	<script src="build/ng/portfolio.ng.min.js"></script>
+</body>
+</html>
