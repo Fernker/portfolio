@@ -1,1 +1,26 @@
-Index View Loaded
+<h1>Title</h1>
+{{mainCtrl.test}}
+<hr>
+	<a ng-href="/experiences/{{job.url}}/" style="width: 200px;height: 200px;background: #ccc;" ng-repeat="job in indexCtrl.portfolio.a">
+		<h3>{{job.title}}</h3>
+		<img ng-src="{{job.img}}" width="125px">
+		<small>{{job.timeframe}}</small>
+	</a>
+
+<hr>
+
+<hr>
+	<a ng-href="/projects/{{proj.url}}/" style="width: 200px;height: 200px;background: #ccc;" ng-repeat="proj in indexCtrl.portfolio.b">
+		<h3>{{proj.title}}</h3>
+		<img ng-src="{{proj.img}}" width="125px">
+		<small>{{proj.timeframe}}</small>
+	</a>
+
+<hr>
+
+<hr>
+
+	<span ng-repeat="skill in indexCtrl.portfolio.skills">{{skill.skill}} - {{skill.count}} </span> 
+
+<hr>
+{{mainCtrl.portfolio}}

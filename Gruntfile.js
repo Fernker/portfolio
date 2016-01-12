@@ -21,13 +21,13 @@ module.exports = function(grunt){
 
 //### UGLIFY ###//
 
-	var ngFiles = {'build/ng/portfolio.ng.min.js' : ['ng/portfolipApp.js', 'ng/**/*.js']};
+	var ngFiles = {'build/ng/portfolio.ng.min.js' : ['ng/portfolioApp.js', 'ng/**/*.js']};
 
 	grunt.config('uglify', {
 	    'ng' : {
 	        options : {
 	            mangle   : false,
-	            compress : {},
+	            compress : false,
 	            beautify : false
 	        },
 	        files : ngFiles

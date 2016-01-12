@@ -22,20 +22,20 @@ angular.module('portfolioApp', ['ngSanitize','ngRoute'])
             //Student related URLs
             .when('/',{
                 templateUrl: 'ng/views/index.html',
-                //controller: 'loginCtrl',
-                //controllerAs: 'loginCtrl',
+                controller: 'indexCtrl',
+                controllerAs: 'indexCtrl',
+            })
+            .when('/experiences/:experienceUrl/',{
+                templateUrl: 'ng/views/experience.html',
+                controller: 'experienceCtrl',
+                controllerAs: 'experienceCtrl'
+            })
+            .when('/projects/:projectUrl/',{
+                templateUrl: 'ng/views/project.html',
+                controller: 'projectCtrl',
+                controllerAs: 'projectCtrl'
             })
 
-    //         .when('/app',{
-    //         	templateUrl: '/static/ng/views/app.html',
-    //         	controller: 'appCtrl',
-    //         	controllerAs: 'appCtrl',
-    //         	resolve: {
-				// 	auth: function(loginFactory){
-				// 		return loginFactory.checkAuth()
-				// 	}
-				// }
-    //         })
             .otherwise({
                 redirectTo: '/'
             });
@@ -44,5 +44,5 @@ angular.module('portfolioApp', ['ngSanitize','ngRoute'])
 // .config(function($resourceProvider) {
 //   $resourceProvider.defaults.stripTrailingSlashes = false;
 // })
-.run(['$route', angular.noop]);;
+//.run(['$route', angular.noop]);;
 
