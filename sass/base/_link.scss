@@ -1,0 +1,16 @@
+
+%link{
+	text-decoration: none;
+	color: $color-blue;
+
+	&:hover,
+	&:active{
+		text-decoration: underline;
+	}
+}
+
+
+a,
+.link{
+	@extend %link;
+}

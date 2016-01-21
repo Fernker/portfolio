@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+/**
+* Box sizing
+*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+* {
+  &,
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: inherit;
+  }
+}
+
+/**
+ * Margin/Padding
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+abbr[title], dfn[title] {
+  cursor: help;
+}
+
+/**
+ * So that `alt` text is visually offset if images don't load.
+ */
+img {
+  font-style: italic;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ *//*
+label, // ToDo: Is this needed?
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}*/
+
+.text-input:active,  // ToDo: Alter with wgu class names?
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}

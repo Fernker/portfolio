@@ -35,6 +35,11 @@ angular.module('portfolioApp', ['ngSanitize','ngRoute'])
                 controller: 'projectCtrl',
                 controllerAs: 'projectCtrl'
             })
+            .when('/skills/:skill/',{
+                templateUrl: 'ng/views/skill.html',
+                controller: 'skillCtrl',
+                controllerAs: 'skillCtrl'
+            })
 
             .otherwise({
                 redirectTo: '/'

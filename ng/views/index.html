@@ -1,26 +1,37 @@
-<h1>Title</h1>
-{{mainCtrl.test}}
-<hr>
-	<a ng-href="/experiences/{{job.url}}/" style="width: 200px;height: 200px;background: #ccc;" ng-repeat="job in indexCtrl.portfolio.a">
-		<h3>{{job.title}}</h3>
-		<img ng-src="{{job.img}}" width="125px">
-		<small>{{job.timeframe}}</small>
-	</a>
+<hero class="hero" slider="mainCtrl.navSlider"></hero>
 
-<hr>
+<div class="container">
+	<section>
+		<h2 class="section-header">H2 Header</h2>
+		<div class="cards">
+			<card details="job" featured="{{$index}}" ng-repeat="job in indexCtrl.portfolio.a"></card>
+		</div>
+	</section>
 
-<hr>
-	<a ng-href="/projects/{{proj.url}}/" style="width: 200px;height: 200px;background: #ccc;" ng-repeat="proj in indexCtrl.portfolio.b">
-		<h3>{{proj.title}}</h3>
-		<img ng-src="{{proj.img}}" width="125px">
-		<small>{{proj.timeframe}}</small>
-	</a>
+	<section>
+		<h2 class="section-header">H2 Header 2</h2>
+		<div class="cards">
+			<card details="proj" ng-repeat="proj in indexCtrl.portfolio.b"></card>
+		</div>
+	</section>
 
-<hr>
 
-<hr>
+	<section>
+		<h2 class="section-header">H2 Header 2</h2>
+		<div class="skills">
+			<skill details="skill" ng-repeat="skill in indexCtrl.portfolio.skills"></skill>
+		</div>
+	</section>
 
-	<span ng-repeat="skill in indexCtrl.portfolio.skills">{{skill.skill}} - {{skill.count}} </span> 
+	<section>
+		<h2 class="section-header">Smurfville</h2>
+		<div class="card card--full" >
+			<div class="card__info">
+				<h3>{{indexCtrl.portfolio.education.title}}</h3>
+				<small>{{indexCtrl.portfolio.education.subTitle}}</small>
+			</div>
+			<span class="card__meta">{{indexCtrl.portfolio.education.timeframe}}</span>
+		</div>
+	</section>
+</div>
 
-<hr>
-{{mainCtrl.portfolio}}

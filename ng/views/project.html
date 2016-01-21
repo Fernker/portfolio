@@ -1,3 +1,21 @@
-Proj
 
-{{projectCtrl.project}}
+<ng-include src="'ng/partials/nav.html'"></ng-include>
+<div class="container container--nav">
+	<section>
+		<h2 class="section-header">{{projectCtrl.project.title}}</h2>
+		<h3>{{projectCtrl.project.subTitle}}</h3>
+		<h4>{{projectCtrl.project.status}}</h4>
+		<h4 ng-if="projectCtrl.project.exampleUrl"><a ng-href="{{projectCtrl.project.exampleUrl}}"></a></h4>
+		<p>{{projectCtrl.project.summary}}</p>
+		<ul>
+			<li ng-repeat="point in projectCtrl.project.points">{{point}}</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2 class="section-header">Skills Used</h2>
+		<div class="skills">
+			<skill details="skill" ng-repeat="skill in projectCtrl.project.skills"></skill>
+		</div>
+	</section>
+</div>

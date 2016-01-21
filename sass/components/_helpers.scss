@@ -1,0 +1,11 @@
+
+
+.helper{
+	&-right{
+		float: right;
+	}
+
+	&-title-case{
+		text-transform: capitalize;
+	}
+}

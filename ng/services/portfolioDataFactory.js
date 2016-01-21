@@ -16,6 +16,12 @@
 					.then(function(data){
 						portfolio = data.data;
 
+
+
+						portfolio.everything = [];
+						portfolio.everything = portfolio.everything.concat(portfolio.a);
+						portfolio.everything = portfolio.everything.concat(portfolio.b);
+
 						portfolio.skills = getSkills(portfolio);
 						console.log('interesting');
 						return portfolio;
@@ -38,21 +44,35 @@
 				})
 		}
 
+		function getSkill(skillName){
+			skillName = skillName.replace(/-/g,' ');
+			return getPortfolio()
+				.then(function(portfolio){
+					return _.filter(portfolio.everything, function(obj) {
+						if(obj.skills.indexOf(skillName) > -1){
+							return true;
+						}
+						return false;
+					})
+				})
+		}
+
 
 
 		return {
 			getPortfolio: getPortfolio,
 			getExperience: getExperience,
-			getProject: getProject
+			getProject: getProject,
+			getSkill: getSkill
 		};
 
 
 		//Private//
 
 		function getSkills(portfolio){
-			var skillsUnsorted = [];
-			skillsUnsorted = skillsUnsorted.concat(_.pluck(portfolio.a,'skills'));
-			skillsUnsorted = skillsUnsorted.concat(_.pluck(portfolio.b,'skills'));
+			var skillsUnsorted = _.pluck(portfolio.everything,'skills');
+			//skillsUnsorted = skillsUnsorted.concat(_.pluck(portfolio.a,'skills'));
+			//skillsUnsorted = skillsUnsorted.concat(_.pluck(portfolio.b,'skills'));
 			return frequency(_.flatten(skillsUnsorted,true));
 		}
 

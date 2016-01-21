@@ -1,0 +1,26 @@
+
+
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.skill{
+	padding: $gutter * 1.5;
+	display: block;
+	margin-right: $gutter / 2;
+	margin-left: $gutter / 2;
+	background-color: $color-off-white;
+	margin-bottom: $gutter;
+	border: 1px solid $color-cloud-grey;
+	text-decoration: none;
+
+	transition: border .2s linear;
+
+	&:hover{
+		border: 1px solid $color-grey;
+		text-decoration: none;
+	}
+}

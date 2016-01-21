@@ -1,0 +1,20 @@
+
+
+
+.btn{
+	padding: 0 10px;
+	color: $color-blue;
+	border: 1px solid $color-blue;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	background: none;
+	border-radius: 2px;
+	transition: background .2s linear, color .2s linear;
+
+	&:hover,
+	&:active{
+		background: $color-blue;
+		color: #fff;
+	}
+}

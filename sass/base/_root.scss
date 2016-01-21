@@ -1,0 +1,10 @@
+html {
+  //@include get-font(normal, normal, normal);
+  //font-family: Lato, arial, sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased !important;
+}
+body {
+  background: #FFF;
+  -webkit-tap-highlight-color: transparent;
+}

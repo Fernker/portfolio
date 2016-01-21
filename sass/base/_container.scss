@@ -1,0 +1,21 @@
+/*----------------------------*\
+	Container
+\*----------------------------*/
+/**
+ * 
+ *  
+ * 
+ * 
+ */
+
+  .container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 $padding ;
+
+	&--nav{
+		margin-top: 70px;
+	}
+ }

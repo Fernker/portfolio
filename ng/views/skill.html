@@ -1,0 +1,12 @@
+
+<ng-include src="'ng/partials/nav.html'"></ng-include>
+<div class="container container--nav">
+	<section>
+		<h2 class="section-header helper-title-case">Skill: {{skillCtrl.skillTitle}}</h2>
+		<div class="cards">
+			<card ng-repeat="item in skillCtrl.skillWork" details="item"></card>
+		</div>
+	</section>
+</div>
+
+

@@ -5,7 +5,7 @@ module.exports = function(grunt){
 
 //### SASS ###//
 
-	var sassFiles = {'build/css/remind.min.css' : ['sass/portfolioMain.scss']};
+	var sassFiles = {'build/css/portfolio.min.css' : ['sass/portfolioMain.scss']};
 
 	grunt.config('sass', {
         'css' : {

@@ -14,15 +14,25 @@
 		    display: none !important;
 		}
 	</style>
-	<link href="build/css/portfolio.min.css" >
+	<link rel="stylesheet" href="build/css/portfolio.min.css" >
   </head>
 
 </head>
 <body ng-cloak ng-controller="mainCtrl as mainCtrl">
+	
+	
+		<ng-view autoscroll="false"></ng-view>
+		<footer class="footer">
+			<div class="container">
+				<small>&copy; {{mainCtrl.copyYear}} Kenny Fernsten </small>
+			</div>
+			
+		</footer>
+		
 
-	<ng-view></ng-view>
-	<hr>
-	&copy; {{mainCtrl.copyYear}} Kenny Fernsten 
+
+
+	
 	<script src="js/lib/lodash.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
 	<script src="https://code.angularjs.org/1.4.2/angular-sanitize.js"></script>

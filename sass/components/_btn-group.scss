@@ -1,0 +1,19 @@
+
+
+.btn-group{
+	display: flex;
+	justify-content: center;
+
+	&--inline{
+		display: inline-flex;
+	}
+
+
+	&__btn{
+		margin-right: $padding;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

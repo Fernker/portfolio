@@ -1,0 +1,19 @@
+
+$size-breakpoint-extra-small: 400px;
+
+$size-breakpoint-medium: 700px;
+$size-breakpoint-large: 1050px;
+
+
+
+
+
+$responsive-screen            : "only screen" !default;
+//$responsive-screen-xl         : "#{$responsive-screen} and (min-width:#{$size-breakpoint-xl})" !default;
+$responsive-screen-large      : "#{$responsive-screen} and (min-width:#{$size-breakpoint-large})" !default;
+$responsive-screen-medium-up  : "#{$responsive-screen} and (min-width:#{$size-breakpoint-medium})" !default;
+$responsive-screen-medium-only: "#{$responsive-screen} and (min-width:#{$size-breakpoint-medium}) and (max-width:#{$size-breakpoint-large - 1})" !default;
+$responsive-screen-small-up   : "#{$responsive-screen} and (min-width: #{$size-breakpoint-extra-small + 1})" !default;
+$responsive-screen-small-only : "#{$responsive-screen} and (max-width: #{$size-breakpoint-medium - 1}) and (min-width:#{$size-breakpoint-extra-small})" !default;
+$responsive-screen-small-down : "#{$responsive-screen} and (max-width: #{$size-breakpoint-medium - 1})" !default;
+$responsive-screen-extra-small: "#{$responsive-screen} and (max-width: #{$size-breakpoint-extra-small})" !default;

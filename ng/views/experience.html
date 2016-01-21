@@ -1,1 +1,27 @@
-{{experienceCtrl.experience}}
+
+<ng-include src="'ng/partials/nav.html'"></ng-include>
+
+<div class="container container--nav">
+	<section>
+		<h1 class="section-header">{{experienceCtrl.experience.title}}</h1>
+		<img src="" alt="" ng-src="{{experienceCtrl.experience.img}}" height="200px">
+		<h2>{{experienceCtrl.experience.subTitle}}</h2>
+		<h3>{{experienceCtrl.experience.timeframe}}</h3>
+		<p>{{experienceCtrl.experience.summary}}</p>
+		<ul class="list list--indented list--bulleted">
+			<li class="list__item" ng-repeat="point in experienceCtrl.experience.points">{{point}}</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2 class="section-header">Screenshots</h2>
+		<photo-gallery gallery="experienceCtrl.experience.screens"></photo-gallery>
+	</section>
+
+	<section>
+		<h2 class="section-header">Skills Used</h2>
+		<div class="skills">
+			<skill details="skill" ng-repeat="skill in experienceCtrl.experience.skills"></skill>
+		</div>
+	</section>
+</div>

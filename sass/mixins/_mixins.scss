@@ -1,0 +1,26 @@
+
+/**
+  Generate the media query needed based on the size passed
+  @param $size is the size name defined below
+*/
+@mixin breakpoint($size){
+  @if $size == small {
+    @media #{$responsive-screen-small-only}{@content;}
+  } @else if $size == small-down {
+    @media #{$responsive-screen-small-down} {@content;}
+  } @else if $size == small-up {
+    @media #{$responsive-screen-small-up} {@content;}
+  } @else if $size == medium {
+    @media #{$responsive-screen-medium-only}{@content;}
+  } @else if $size == medium-up {
+    @media #{$responsive-screen-medium-up}{@content;}
+  } @else if $size == large {
+    @media #{$responsive-screen-large}{@content;}
+  } @else if $size == extra-large {
+    @media #{$responsive-screen-xl}{@content;}
+  } @else if $size == extra-small {
+    @media #{$responsive-screen-extra-small}{@content;}
+  } @else{
+    @warn "That size is not mapped to a breakpoint";
+  }
+}
