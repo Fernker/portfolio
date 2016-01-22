@@ -1,3 +1,7 @@
 .section-header{
 	margin: $gutter * 5 0 $gutter * 3;
+
+	&--sub{
+		margin: $gutter * 2 0 $gutter * 1;
+	}
 }

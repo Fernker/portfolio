@@ -85,13 +85,48 @@
 				if(match){
 					match.count += 1;
 				}else{
+					var count = 1;
+					//Manual weight manipulation
+					switch(arr[i]){
+						case 'AngularJS':
+							count = 520;
+							break;
+						case 'JavaScript':
+							count = 499;
+							break;
+						case 'GruntJS':
+							count = 498;
+							break;
+						case 'CSS3':
+							count = 497;
+							break;
+						case 'HTML5':
+							count = 496;
+							break;
+						case 'jQuery':
+							count = 495;
+							break;
+						case 'Unit Tests':
+							count = 494;
+							break;
+						case 'JasmineJS':
+							count = 493;
+							break;
+						case 'Karma':
+							count = 492;
+							break;
+						case 'Django':
+							count = 493;
+							break;
+					}
 					result.push({
 						'skill':arr[i],
-						'count': 1
+						'count': count
 					})
 				}
 			}
-			return result;
+
+			return _.sortBy(result,'count').reverse();
 		}
 	}
 })();

@@ -2,14 +2,14 @@
 
 <div class="container">
 	<section>
-		<h2 class="section-header">H2 Header</h2>
+		<h2 class="section-header">Experience</h2>
 		<div class="cards">
 			<card details="job" featured="{{$index}}" ng-repeat="job in indexCtrl.portfolio.a"></card>
 		</div>
 	</section>
 
 	<section>
-		<h2 class="section-header">H2 Header 2</h2>
+		<h2 class="section-header">Projects</h2>
 		<div class="cards">
 			<card details="proj" ng-repeat="proj in indexCtrl.portfolio.b"></card>
 		</div>
@@ -17,21 +17,35 @@
 
 
 	<section>
-		<h2 class="section-header">H2 Header 2</h2>
+		<h2 class="section-header">Skills</h2>
 		<div class="skills">
 			<skill details="skill" ng-repeat="skill in indexCtrl.portfolio.skills"></skill>
 		</div>
 	</section>
 
 	<section>
-		<h2 class="section-header">Smurfville</h2>
-		<div class="card card--full" >
-			<div class="card__info">
-				<h3>{{indexCtrl.portfolio.education.title}}</h3>
-				<small>{{indexCtrl.portfolio.education.subTitle}}</small>
+		<h2 class="section-header">Education / Other</h2>
+		<div class="cards">
+			<div class="card card--full" style="background-image: url({{indexCtrl.portfolio.education.img}})" >
+				<div class="card__info">
+					<h3>{{indexCtrl.portfolio.education.title}}</h3>
+					<small>{{indexCtrl.portfolio.education.subTitle}}</small>
+				</div>
+				<span class="card__meta">{{indexCtrl.portfolio.education.timeframe}}</span>
 			</div>
-			<span class="card__meta">{{indexCtrl.portfolio.education.timeframe}}</span>
+			<div class="card " style="background-image: url(/images/main/bsa.svg)" >
+				<div class="card__info">
+					<h3>Eagle Scout</h3>
+				</div>
+			</div>
+			<div class="card" style="background-image: url(/images/main/lds.svg)">
+				<div class="card__info">
+					<h3>The Church of Jesus Christ of Latter-day Saints</h3>
+					<small>Volunteer Representative, England</small>
+				</div>
+			</div>
 		</div>
+		
 	</section>
 </div>
 

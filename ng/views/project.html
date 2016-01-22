@@ -1,15 +1,22 @@
 
+
 <ng-include src="'ng/partials/nav.html'"></ng-include>
+
 <div class="container container--nav">
 	<section>
-		<h2 class="section-header">{{projectCtrl.project.title}}</h2>
-		<h3>{{projectCtrl.project.subTitle}}</h3>
-		<h4>{{projectCtrl.project.status}}</h4>
-		<h4 ng-if="projectCtrl.project.exampleUrl"><a ng-href="{{projectCtrl.project.exampleUrl}}"></a></h4>
+		<h1 class="section-header">{{projectCtrl.project.title}}</h1>
+		<img src="" alt="" ng-src="{{projectCtrl.project.img}}" height="200px">
+		<h2 class="section-header--sub">Status: {{projectCtrl.project.subTitle}}</h2>
+		<h3 class="section-header--sub" ng-if="projectCtrl.project.exampleUrl">Site: <a ng-href="{{projectCtrl.project.exampleUrl}}">{{projectCtrl.project.title}}</a></h3>
 		<p>{{projectCtrl.project.summary}}</p>
-		<ul>
-			<li ng-repeat="point in projectCtrl.project.points">{{point}}</li>
+		<ul class="list list--indented list--bulleted">
+			<li class="list__item" ng-repeat="point in projectCtrl.project.points" ng-bind-html="point"></li>
 		</ul>
+	</section>
+
+	<section ng-if="projectCtrl.project.screens">
+		<h2 class="section-header">Screenshots</h2>
+		<photo-gallery gallery="projectCtrl.project.screens"></photo-gallery>
 	</section>
 
 	<section>

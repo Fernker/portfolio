@@ -1,17 +1,24 @@
 {
 	"a": [
 		{
-			"title": "This is a long title",
-			"subTitle": "Superman, amazing, cool",
-			"url": "FooBar",
-			"img": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-			"timeframe": "2012 - 2013",
-			"skills": ["cars","banana"],
-			"summary" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eos praesentium aspernatur facilis saepe assumenda, illo nobis ea commodi, optio, unde omnis aliquam eius quae velit dignissimos, explicabo et inventore. Doloremque error repellendus velit quia nesciunt voluptates ad assumenda magni, autem iste optio quibusdam nulla itaque ratione illum consequuntur? Ea, repellat nam vel maiores voluptas, vitae modi expedita perferendis et corporis iure rerum laborum sit nesciunt officia nihil ipsum aliquid sunt fugiat odio, quaerat quis porro. Quidem debitis repellendus consequuntur distinctio deleniti rem, aperiam delectus voluptate consequatur porro quia sint perferendis, non? Rerum totam minus sapiente inventore sequi delectus, amet voluptatem, molestias laboriosam quo natus. Laborum impedit quaerat ullam et beatae eligendi pariatur? Porro aperiam ipsum ad cumque magnam asperiores dolor consectetur unde totam. Architecto, perspiciatis eius repellat! Recusandae aperiam nam totam asperiores impedit vitae at officia natus quibusdam reprehenderit cupiditate a in hic alias repellendus provident assumenda earum ipsa quod, vero ex architecto, illum nisi! Nemo fuga autem ex aperiam tenetur voluptas quas inventore molestiae totam, rerum sint excepturi quam culpa minus aliquid, natus. Impedit nulla expedita, aperiam dicta vero quo natus tempore, blanditiis atque quis, facilis fugiat obcaecati voluptates vel accusantium? Voluptate iure, odio non molestias explicabo accusamus ad aliquid possimus, fugit voluptatibus velit consequuntur sapiente deleniti, esse dolor dolores aliquam! Quae aliquid ad molestias quibusdam itaque placeat iste nihil suscipit, a commodi quaerat blanditiis nemo natus, dicta voluptates alias mollitia excepturi sed nam unde eligendi debitis neque magnam ea? Labore reprehenderit, delectus. Totam natus dolores, voluptates. Ducimus veritatis deserunt vero, placeat a voluptatem! Soluta iusto quibusdam impedit quod, nemo culpa expedita mollitia voluptatum dicta sed, quasi accusamus quae tempore similique veritatis molestias odit facilis eaque repudiandae consequuntur, adipisci fugiat repellendus. Unde quas laudantium accusantium, dignissimos dicta tempore a cupiditate quae ipsa sequi voluptatibus ipsum dolor at delectus!",
+			"title": "Western Governors University",
+			"subTitle": "Tech Lead, Senior UI/UX Developer",
+			"url": "western-governors-university",
+			"img": "/images/main/wgu.svg",
+			"timeframe": "2013 - Current",
+			"skills": ["AngularJS","JavaScript","jQuery","Git", "CSS3","Sass","HTML5","GruntJS","npm","svg","Responsive", "Photoshop","svg icons","Agile","Apache","JSON","API","REST","Karma","JasmineJS","Unit Tests","Protractor","SVN","Liferay","Ping Access","Hiring"],
+			"summary" : "I was hired at WGU as the first UI dev on a new UI/UX team.  WGU had a student portal that was built on older technologies and wasn't able to scale.  I was tasked with moving the front-end to a more scalable solution.",
 			"points" : [
-				"Did awesomeness",
-				"Helped achieve awesomeness",
-				"Had fun"
+				"Introduced new technologies such as AngularJS, Sass, GruntJS.",
+				"Created central re-usable GruntJS based development stack.",
+				"Built Sass centric CSS framework of re-usable components to achieve a consistent brand for the students.",
+				"Rebuilt student portal with AngularJS and orchestrated multiple apps and parallel releases for minimal impact on the business.",
+				"Architectured deployment processes, and server architecture for front-end related files.",
+				"Orchestrated front-end move to service oriented architecture with minimal impact to the students.",
+				"Interviewed candidates for open UI dev positions.",
+				"Implemented code reviews and standards among the team.",
+				"Introduced and trained on unit tests in JavaScript",
+				"Trained other devs in related technologies as needed."
 			],
 			"screens": [
 				{
@@ -47,65 +54,122 @@
 			]
 		},
 		{
-			"title": "Foo Bar 2",
+			"title": "Clearlink",
+			"subTitle" : "Front-End Developer",
 			"url": "Foo-Bar-2",
-			"img": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-			"timeframe": "2011 - 2012",
-			"skills": ["cars","sailing in a ship down the river"]
+			"img": "/images/main/clearlink.png",
+			"timeframe": "2012 - 2013",
+			"skills": ["Responsive", "jQuery","JavaScript","JSON","AJAX", "PHP","mySQL","HTML","CSS3","Sass","Photoshop","SVN","FTP","WordPress","Apache","polyfills"],
+			"summary" : "As a front-end developer at Clearlink I worked on several sites and brands.  This allowed me to quickly iterate on new skills and techniques in the industry.  ",
+			"points" : [
+				"Introduced responsive design and development.",
+				"Introduced Sass as a CSS tool to help with large CSS projects.",
+				"Created an elegant product search and checkout process for AT&amp;T services.  "
+			]
 		},
 		{
-			"title": "Brigham Young University",
-			"subTitle": "Lorem Ipsum Potroneus",
-			"url": "FooBar3",
-			"img": "http://placecage.com/c/200/200",
-			"timeframe": "2010 - 2011",
-			"skills": ["cars","bike"]
+			"title": "Brigham Young University: Chemistry Dept.",
+			"subTitle": "Web Applications Developer ",
+			"url": "byu-chemistry-department",
+			"img": "/images/main/byu.svg",
+			"timeframe": "2010 - 2012",
+			"skills": ["Django","Python", "mySQL","Postgres","PHP","Drupal","CSS","HTML","JavaScript","jQuery","SVN","Apache"],
+			"summary" : "During my time as a web applications developer for the BYU Chemistry Department I was able to work on several exciting projects.  I was initially hired as a PHP developer to help maintain several PHP based applications.  I was cross trained in Django and spent most of my time with that technology stack.  During my time I was able to work closely with several faculty members to gather requirements, build base on requirements, and gather feedback during testing.",
+			"points" : [
+				"Supported custom Drupal modules for department needs.",
+				"Learned Django and wrote several applications in it for various faculty members",
+				"Helped interview candidates"
+
+			]
 		},
 		{
-			"title": "FooBar4",
-			"url": "FooBar4",
-			"img": "http://placecage.com/c/200/200",
-			"timeframe": "2010 - 2011",
-			"skills": ["cars","bike"]
-		},
-		{
-			"title": "FooBar5",
-			"url": "FooBar5",
-			"img": "http://placecage.com/c/200/200",
-			"timeframe": "2010 - 2011",
-			"skills": ["cars","bike"]
+			"title": "Brigham Young University: Office of IT",
+			"subTitle": "Physical Infrustructure Documentation",
+			"url": "byu-office-of-it",
+			"img": "/images/main/byu.svg",
+			"timeframe": "2008 - 2010",
+			"summary" : "Used custom web application to document BYU's physical network.  I was able to spend some time working with the supporting database of the application.",
+			"skills": ["mySQL","Apache"]
 		}
 	],
 	"b": [
 		{
-			"title": "FooWork",
-			"url": "FooWork",
-			"img": "http://placecage.com/c/200/200",
-			"skills": ["truck","banana"],
-			"status": "No longer live",
-			"exampleUrl": "",
+			"title": "Remind Me When",
+			"subTitle" : "In Progress",
+			"url": "remind-me-when",
+			"img": "/images/main/alarm.svg",
+			"skills": ["AngularJS","Django","REST","API","CSS3","HTML5","JavaScript","Apache","Python","Cron","Git","Database"],
+			
 			"summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, odio, quasi! Nisi dolores amet quaerat quae voluptate eligendi hic quas at similique nam iste deleniti nihil dolorem aliquam, assumenda et ipsum voluptates quis saepe iusto consequuntur. Quas nulla, ea accusantium est dolorum quibusdam! Impedit error deserunt accusantium nesciunt ex, est cum ipsa in similique voluptatem incidunt sequi, officiis, dicta omnis inventore id minus, numquam quam molestias vel quas distinctio. A fuga, qui quidem ipsa error quibusdam sunt doloribus inventore optio amet, veniam voluptates, aspernatur soluta illo libero suscipit magnam rerum ducimus consectetur! Architecto iure sed necessitatibus minima a nemo earum quibusdam dolores illo. Qui iste deleniti, unde laborum laudantium. Porro similique beatae distinctio dignissimos pariatur aperiam sed consequatur ducimus eius, facilis, libero nulla voluptate facere laudantium iusto architecto. Nobis veritatis exercitationem molestias harum, eum doloremque fuga. Impedit placeat reprehenderit dolore eum amet, in, culpa officiis atque. Corrupti voluptas quod dolore labore, ipsam dolores laboriosam, deleniti sequi illo. Odit quos cum quae voluptatem officia nulla similique accusamus beatae, eligendi eaque, molestiae quibusdam esse animi earum adipisci, illum reiciendis eum sapiente magni aliquid quisquam aspernatur aperiam facere! Doloribus iste numquam ipsam ipsa repudiandae cumque, necessitatibus, dolorem delectus suscipit. Repellendus qui facere, alias.",
 			"points" : [
 				"point 1", "point2" , "point 3"
 			]
 		},
 		{
-			"title": "Foo Work 2",
-			"url": "Foo-Work-2",
-			"img": "http://placecage.com/c/200/200",
-			"skills": ["cars","banana"]
+			"title": "Native Apps",
+			"url": "apps",
+			"subTitle" : "In Progress",
+			"img": "/images/main/corona.png",
+			"skills": ["CoronaSDK","LUA","Photoshop","Illustrator","iOS","Android"],
+			"summary" : "I like to spend some of my free time making little games for iOS and Android.  It's a way for me to work on something smaller and to all aspects required for a game (coding, sound, graphics, etc.).  I have found that working in another language has also helped me learn some new ideas that have transferred to my other core coding languages."
 		},
 		{
-			"title": "FooWork3",
-			"url": "FooWork3",
-			"img": "http://placecage.com/c/200/200",
-			"skills": ["cars","apple"]
+			"title": "Trivia Builder",
+			"url": "trivia-builder",
+			"subTitle" : "Live",
+			"img" : "/images/main/list.svg",
+			"skills": ["AngularJS","PHP","API","REST","CSS3","Bootstrap","HTML5","Responsive","jQuery","Database"],
+			"summary" : "Trivia Builder is a utility site that helps me create trivia questions for my trivia based apps.  It has several features and functionality to make writing trivia questions and answers easy and simple.  It originally was written in jQuery but I upgraded it to AngularJS to help with my skills."
+		},
+		{
+			"title": "Expense Reporter",
+			"url": "expense-reporter",
+			"subTitle" : "Live",
+			"img": "/images/main/money.svg",
+			"skills": ["AngularJS","PHP","API","REST","CSS3","Bootstrap","HTML5","Responsive","jQuery","Database"],
+			"summary" : "A single page application that allows me to track my income and expenses related to side projects I do."
+		}
+		,
+		{
+			"title": "Rendered Mouse",
+			"url": "rendered-mouse",
+			"subTitle" : "Live",
+			"exampleUrl": "http://www.renederedmouse.com",
+			"img": "/images/main/rm.svg",
+			"skills": ["Django","Responsive","CSS3","HTML5","Database","SEO"],
+			"summary" : "One of my huge interests is theme parks and Disneyland.  Rendered Mouse is what I publish those projects under and this site is a showcase for them."
+		},
+		{
+			"title": "Yesterday's Big Thing",
+			"url": "yesterdays-big-thing",
+			"subTitle" : "Discontinued",
+			"exampleUrl": "http://web.archive.org/web/20140130111809/http://www.yesterdaysbigthing.com/2014/01/30/",
+			"img": "/images/main/ybt.png",
+			"skills": ["Django","Responsive","CSS3","HTML5","Database","SEO","YouTube","API"],
+			"summary" : "Yesterday's Big Thing was a YouTube aggragator site.  It featured new videos across several categories everyday.  The admin interface was custom made and extremely easy to use.  The site ran for over 2 years before I decided to stop updating it because of time.  It can be viewed through the Way Back Machine. "
+		},
+		{
+			"title": "Digital Nurse Practioner Software",
+			"url": "capstone",
+			"subTitle" : "Capstone Project",
+			"img": "/images/main/byu.svg",
+			"skills": ["Django","Responsive","CSS3","HTML5","Database","API"],
+			"summary" : "For our capstone project we worked with the graduate nursing program of BYU.  We worked with them as a client to solve the issue they had with massive amounts of paper documents.  We built a digitial nurse practioner evaluation platform for the project.  This allowed necessary parties to create, complete, and review evaluation forms.  We also provided the ability to view items offline as needed when traveling to locations without an internet connection."
+		},
+		{
+			"title": "Portfolio",
+			"url": "portfolio",
+			"img": "/images/main/folder.svg",
+			"exampleUrl" : "https://github.com/Fernker/portfolio",
+			"skills": ["AngularJS","Responsive","CSS3","HTML5","JSON","Git"],
+			"summary" : "I needed a simple and clean portfolio to professionally showcase my work.  This was built with much love and care using AngularJS.  "
 		}
 	],
 	"education": {
-		"title": "High School Musical",
+		"title": "Brigham Young University",
+		"subTitle" : "B.S. Information Technology",
 		"timeframe" : "2012",
-		"img" : "http://placecage.com/c/50/50",
-		"subTitle" : "IT Awesome"
+		"img" : "/images/main/byu.svg",
+		"url" : "byu"
 	}
 }
