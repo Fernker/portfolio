@@ -16,7 +16,7 @@
 
 	<section ng-if="projectCtrl.project.screens">
 		<h2 class="section-header">Screenshots</h2>
-		<photo-gallery gallery="projectCtrl.project.screens"></photo-gallery>
+		<photo-gallery gallery="projectCtrl.project.screens" prefix="{{projectCtrl.project.screenFilenamePrefix}}"></photo-gallery>
 	</section>
 
 	<section>
