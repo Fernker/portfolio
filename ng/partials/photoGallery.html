@@ -18,7 +18,7 @@
 					<img ng-src="{{photoGalleryCtrl.viewingImage}}" alt="" class="viewer__content__holder__img">
 				</div>
 				
-				<p class="viewer__content__caption" ng-show="!photoGalleryCtrl.loading && !photoGalleryCtrl.error">{{photoGalleryCtrl.gallery[photoGalleryCtrl.index + 1]}}</p>
+				<p class="viewer__content__caption" ng-show="!photoGalleryCtrl.loading && !photoGalleryCtrl.error">{{photoGalleryCtrl.gallery[photoGalleryCtrl.index]}}</p>
 			</div>
 			<div class="viewer__next" ng-click="photoGalleryCtrl.switchImage(1)">&rsaquo;</div>
 
