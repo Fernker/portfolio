@@ -188,6 +188,16 @@
 			"summary" : "For our capstone project we worked with the graduate nursing program of BYU.  We worked with them as a client to solve the issue they had with massive amounts of paper documents.  We built a digital nurse practitioner evaluation platform for the project.  This allowed necessary parties to create, complete, and review evaluation forms.  We also provided the ability to view items offline as needed when traveling to locations without an internet connection."
 		},
 		{
+			"title": "CoasterWall",
+			"url" : "coasterwall",
+			"subTitle": "Discontinued",
+			"img" : "/images/main/cw.png",
+			"skills": ["Django","CSS","jQuery","HTML","Database","SEO","Accounts"],
+			"summary": "CoasterWall was one of my ultimate side projects.  The site was a place to share theme park centered desktop pictures.  It allowed users to upload images, crop them, and tag them for others to see.  It was a lot of work and fun project to work on.  It featured an admin panel with an email alert system to approve all new uploads from users.",
+			"screenFilenamePrefix":"cw"
+			
+		},
+		{
 			"title": "Portfolio",
 			"url": "portfolio",
 			"img": "/images/main/folder.svg",

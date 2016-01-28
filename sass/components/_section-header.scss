@@ -4,4 +4,11 @@
 	&--sub{
 		margin: $gutter * 2 0 $gutter * 1;
 	}
+
+	&-img{
+		max-width: 100%;
+	    width: auto;
+	    height: auto;
+	    max-height: 100%;
+	}
 }
