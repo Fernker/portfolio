@@ -1,10 +1,11 @@
 
 
 .skills{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	align-content: flex-start;
+
+	@include flexbox();
+	@include flex-wrap(wrap);
+	@include align-items(flex-start);
+	@include align-content(flex-start);
 }
 
 .skill{
@@ -16,7 +17,6 @@
 	margin-bottom: $gutter;
 	border: 1px solid $color-cloud-grey;
 	text-decoration: none;
-
 	transition: border .2s linear;
 
 	&:hover{

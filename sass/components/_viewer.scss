@@ -1,18 +1,24 @@
 .viewer{
-	display: flex;
-	flex-direction: row;
+	@include flexbox();
+	@include flex-direction(row);
+	@include align-items(center);
+	@include justify-content(center);
 	height: 90%;
-	align-items: center;
+
 
 	&__next,
 	&__prev{
-		flex: none;
-		width: 50px;
+		@include flex(none);
+		width: 30px;
 		font-size: 60px;
 		font-weight: bold;
 		color: #FFF;
 		cursor: pointer;
 		text-align: center;
+
+		@include breakpoint(medium-up){
+			width: 50px;
+		}
 	}
 
 	&__prev{
@@ -20,32 +26,60 @@
 	}
 
 	&__content{
-		flex: 1;
+		@include flex(1);
+		@include flexbox();
+		@include flex-direction(column);
 		height: 100%;
-		display: flex;
-		flex-direction: column;
+
 
 		&__holder{
-			flex: 6;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			//@include flexbox();
+			//@include flex(6);
+			@include align-items(center);
+			@include justify-content(center);
+			height: 40%;
+
+			@include breakpoint(medium-up){
+				height: 70%;
+				
+			}
+
+			@include breakpoint(large){
+				height: 75%;
+
+			}
+
 			&__img{
 				max-width: 100%;
 				max-height: 100%;
-				flex: none;
+				//@include flex(none);
+				display: block;
+				margin: 0 auto;
+				height: auto;
+				width: auto;
 			}
 		}
 
 		&__error{
-			font-size: 22px;
+			font-size: 20px;
 			color: #FF6868;
+			@include align-self(center);
 		}
 
 		&__caption{
-			flex: 1;
+			//@include flex(1);
 			color: #FFF;
-			font-size: 18px;
+			font-size: 15px;
+			height: 45%;
+			padding: 5px 5px 0 5px;
+
+			@include breakpoint(medium){
+				height: 30%;
+			}
+
+			@include breakpoint(large){
+				height: 25%;
+			}
 		}
 	}
 

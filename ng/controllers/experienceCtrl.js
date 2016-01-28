@@ -5,7 +5,7 @@
 
 	function experienceCtrlFunc($routeParams, portfolioData){
 		var self = this;
-		self.test = $routeParams;
+		
 
 		portfolioData.getExperience($routeParams.experienceUrl)
 			.then(function(data){

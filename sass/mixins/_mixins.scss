@@ -24,3 +24,162 @@
     @warn "That size is not mapped to a breakpoint";
   }
 }
+
+/**
+  Generate flexbox display definitions with appropriate prefixes
+*/
+@mixin flexbox() {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/**
+  Inline flexbox
+*/
+@mixin inline-flexbox() {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+/**
+  Generate flex definitions with appropriate prefixes
+  @param $values The flex value, manages the elements size in relation to its siblings
+*/
+@mixin flex($values) {
+  -ms-flex:  $values;
+  -webkit-flex:  $values;
+  flex:  $values;
+}
+
+/**
+  Generate the appropiate order in which an element should display relative to its other flex siblings
+  @param $value the number value for the order in which an element should display
+*/
+@mixin flex-order($value) {
+  -ms-flex-order: $value;
+  -webkit-order: $value;
+  order: $value;
+}
+
+/**
+  Flexbox align items
+*/
+@mixin align-items($value) {
+  @if $value == flex-start {
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  } @else if $value == flex-end {
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  } @else{
+    -ms-flex-align: $value;
+    -webkit-align-items: $value;
+    align-items: $value;
+  }
+}
+
+/**
+  Flexbox align self 
+*/
+@mixin align-self($value) {
+  @if $value == flex-start {
+      -ms-flex-item-align: start;
+      -webkit-align-self: flex-start;
+      align-self: flex-start;
+  } @else if $value == flex-end {
+      -ms-flex-item-align: end;
+      -webkit-align-self: flex-end;
+      align-self: flex-end;
+  } @else{
+      -ms-flex-item-align: $value;
+      -webkit-align-self: $value;
+      align-self: $value;
+  }
+}
+
+/**
+  Flexbox justify content
+*/
+@mixin justify-content($value) {
+  @if $value == flex-start {
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  } @else if $value == flex-end {
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  } @else if $value == space-around {
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  } @else if $value == space-between {
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  } @else {
+    -ms-flex-pack: $value;
+    -webkit-justify-content: $value;
+    justify-content: $value;
+  }
+}
+
+/**
+  Flexbox align content
+*/
+@mixin align-content($value) {
+  @if $value == flex-start {
+    -ms-flex-line-pack: start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+  } @else if $value == flex-end {
+    -ms-flex-line-pack: end;
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+  } @else if $value == space-around {
+    -ms-flex-line-pack: distribute;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+  } @else if $value == space-between {
+    -ms-flex-line-pack: justify;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+  } @else {
+    -ms-flex-line-pack: $value;
+    -webkit-align-content: $value;
+    align-content: $value;
+  }
+}
+
+/**
+  Flexbox flex direction
+*/
+@mixin flex-direction($value) {
+  -ms-flex-direction: $value;
+  -webkit-flex-direction: $value;
+  flex-direction: $value;
+}
+
+
+/**
+  Flexbox flex flow
+*/
+@mixin flex-flow($value) {
+  -webkit-flex-flow: $value;
+  -ms-flex-flow: $value;
+  flex-flow: $value;
+}
+
+
+/**
+  Flexbox flex wrap
+*/
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}

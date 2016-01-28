@@ -7,56 +7,41 @@
 			"img": "/images/main/wgu.svg",
 			"timeframe": "2013 - Current",
 			"skills": ["AngularJS","JavaScript","jQuery","Git", "CSS3","Sass","HTML5","GruntJS","npm","svg","Responsive", "Photoshop","svg icons","Agile","Apache","JSON","API","REST","Karma","JasmineJS","Unit Tests","Protractor","SVN","Liferay","Ping Access","Hiring"],
-			"summary" : "I was hired at WGU as the first UI dev on a new UI/UX team.  WGU had a student portal that was built on older technologies and wasn't able to scale.  I was tasked with moving the front-end to a more scalable solution.",
+			"summary" : "I was hired at WGU as the first UI developer on a new UI/UX team.  WGU had a student portal that was built on older technologies and wasn't able to scale.  I was tasked with moving the front-end to a more scalable solution for future student growth.",
 			"points" : [
 				"Introduced new technologies such as AngularJS, Sass, GruntJS.",
-				"Created central re-usable GruntJS based development stack.",
+				"Created centralized and re-usable GruntJS based development stack with necessary tools needed for a wide variety of tasks.",
 				"Built Sass centric CSS framework of re-usable components to achieve a consistent brand for the students.",
-				"Rebuilt student portal with AngularJS and orchestrated multiple apps and parallel releases for minimal impact on the business.",
-				"Architectured deployment processes, and server architecture for front-end related files.",
+				"Rebuilt student portal with AngularJS and orchestrated multiple applications and parallel releases for minimal impact on the business.",
+				"Architected deployment processes, and server architecture for front-end related files.",
 				"Orchestrated front-end move to service oriented architecture with minimal impact to the students.",
-				"Interviewed candidates for open UI dev positions.",
+				"Interviewed candidates for open UI developer positions.",
 				"Implemented code reviews and standards among the team.",
 				"Introduced and trained on unit tests in JavaScript",
-				"Trained other devs in related technologies as needed."
+				"Trained other developers in related technologies as needed."
 			],
 			"screens": [
-				{
-					"url": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-					"thumbnail": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-					"caption": "Just a logo really"
-				},
-				{
-					"url": "http://placecage.com/c/2000/1500",
-					"thumbnail": "http://placecage.com/c/200/150",
-					"caption": "Just a logo really"
-				},
-				{
-					"url": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-					"thumbnail": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-					"caption": "Just a logo really"
-				},
-				{
-					"url": "http://placecage.com/c/6000/2000",
-					"thumbnail": "http://placecage.com/c/600/200",
-					"caption": "Just a logo really"
-				},
-				{
-					"url": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-					"thumbnail": "http://localstaticui.wgu.edu/global/images/logos/national/blue_seal.svg",
-					"caption": "Just a logo really"
-				},
-				{
-					"url": "http://placecage.com/c/500/100",
-					"thumbnail": "http://placecage.com/c/500/100",
-					"caption": "Just a logo really"
-				}
-			]
+				"Rebuilt University login page to be backed by Angular.",
+				"Student's home page.  Originally this had 8 iFrames on the page.  Through the standardization projects that I led we were able to remove all iFrames for this page.",
+				"Study Plan app.  This is where the student spends all of there time studying.  This application was re-written in Angular with no impact on the student's learning experience.",
+				"Study Plan app.  Another shot of a tab in the application.  With the application re-write I was able to architecture the application correctly and to allow for future growth to the application.",
+				"Study Plan app.  A shot of the tools and UX given to the students to complete their learning in their courses.",
+				"Degree Plan app.  This application allows the student to create their own schedule and pace of courses during their studies.  The app was re-written in Angular and is a lot more stable then it was before.",
+				"Help app.  One of the first applications we converted over to Angular with services providing data.",
+				"Resources app.  Another application that was upgraded to use Angular and services.",
+				"Internal tool I created to keep track of our CSS and JS components that we had built.  This was used by other developers to know how to implement global components into their applications.",
+				"Each example also includes a code sample that can be easy copied and used by the user.  The code sample is a custom Angular directive.",
+				"Another shot of the component library application showing the buttons section.",
+				"Financial Services app.  This application was also re-written into Angular with no impact to the student."
+			],
+			"screenFilenamePrefix": "wgu",
+			"screenType" : "png"
+			
 		},
 		{
 			"title": "Clearlink",
 			"subTitle" : "Front-End Developer",
-			"url": "Foo-Bar-2",
+			"url": "clearlink",
 			"img": "/images/main/clearlink.png",
 			"timeframe": "2012 - 2013",
 			"skills": ["Responsive", "jQuery","JavaScript","JSON","AJAX", "PHP","mySQL","HTML","CSS3","Sass","Photoshop","SVN","FTP","WordPress","Apache","polyfills"],
@@ -65,7 +50,16 @@
 				"Introduced responsive design and development.",
 				"Introduced Sass as a CSS tool to help with large CSS projects.",
 				"Created an elegant product search and checkout process for AT&amp;T services.  "
-			]
+			],
+			"screens": [
+				"Landing page for security website I spent a lot of time working on.",
+				"Custom slider made with jQuery and CSS3 transitions.",
+				"Custom form validation made with jQuery.",
+				"History of ADT time line built using jQuery, CSS3 animations and parallax effects.",
+				"Generic home security system comparison site that I was lead front-end developer on."
+			],
+			"screenFilenamePrefix": "cl",
+			"screenType" : "png"
 		},
 		{
 			"title": "Brigham Young University: Chemistry Dept.",
@@ -73,18 +67,19 @@
 			"url": "byu-chemistry-department",
 			"img": "/images/main/byu.svg",
 			"timeframe": "2010 - 2012",
-			"skills": ["Django","Python", "mySQL","Postgres","PHP","Drupal","CSS","HTML","JavaScript","jQuery","SVN","Apache"],
+			"skills": ["Django","Python", "mySQL","PostgreSQL","PHP","Drupal","CSS","HTML","JavaScript","jQuery","SVN","Apache"],
 			"summary" : "During my time as a web applications developer for the BYU Chemistry Department I was able to work on several exciting projects.  I was initially hired as a PHP developer to help maintain several PHP based applications.  I was cross trained in Django and spent most of my time with that technology stack.  During my time I was able to work closely with several faculty members to gather requirements, build base on requirements, and gather feedback during testing.",
 			"points" : [
 				"Supported custom Drupal modules for department needs.",
-				"Learned Django and wrote several applications in it for various faculty members",
+				"Learned Django and wrote several applications with it for faculty members",
+				"Worked closely with faculty to gather requirements, test, and improve applications.",
 				"Helped interview candidates"
 
 			]
 		},
 		{
 			"title": "Brigham Young University: Office of IT",
-			"subTitle": "Physical Infrustructure Documentation",
+			"subTitle": "Physical Infrastructure Documentation",
 			"url": "byu-office-of-it",
 			"img": "/images/main/byu.svg",
 			"timeframe": "2008 - 2010",
@@ -100,10 +95,10 @@
 			"img": "/images/main/alarm.svg",
 			"skills": ["AngularJS","Django","REST","API","CSS3","HTML5","JavaScript","Apache","Python","Cron","Git","Database"],
 			
-			"summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, odio, quasi! Nisi dolores amet quaerat quae voluptate eligendi hic quas at similique nam iste deleniti nihil dolorem aliquam, assumenda et ipsum voluptates quis saepe iusto consequuntur. Quas nulla, ea accusantium est dolorum quibusdam! Impedit error deserunt accusantium nesciunt ex, est cum ipsa in similique voluptatem incidunt sequi, officiis, dicta omnis inventore id minus, numquam quam molestias vel quas distinctio. A fuga, qui quidem ipsa error quibusdam sunt doloribus inventore optio amet, veniam voluptates, aspernatur soluta illo libero suscipit magnam rerum ducimus consectetur! Architecto iure sed necessitatibus minima a nemo earum quibusdam dolores illo. Qui iste deleniti, unde laborum laudantium. Porro similique beatae distinctio dignissimos pariatur aperiam sed consequatur ducimus eius, facilis, libero nulla voluptate facere laudantium iusto architecto. Nobis veritatis exercitationem molestias harum, eum doloremque fuga. Impedit placeat reprehenderit dolore eum amet, in, culpa officiis atque. Corrupti voluptas quod dolore labore, ipsam dolores laboriosam, deleniti sequi illo. Odit quos cum quae voluptatem officia nulla similique accusamus beatae, eligendi eaque, molestiae quibusdam esse animi earum adipisci, illum reiciendis eum sapiente magni aliquid quisquam aspernatur aperiam facere! Doloribus iste numquam ipsam ipsa repudiandae cumque, necessitatibus, dolorem delectus suscipit. Repellendus qui facere, alias.",
-			"points" : [
-				"point 1", "point2" , "point 3"
-			]
+			"summary": "This is a current work in progress web application that I am making.  I wanted to play around with a custom API and bearer tokens with a slick Angular driven front-end.  The back end was built on Django but I am looking at moving it over to MongoDB, NodeJS, and Express just to play with newer technologies.  The purpose of the application is to allow people to set long term reminders such as 'remind me in 3 months to change my air filter'.  I am striving for an easy and streamlined user experience.",
+			"screens": ["Currently a work in progress.  Users are able to create, edit, and delete long term reminders."],
+			"screenFilenamePrefix": "reminders",
+			"screenType" : "png"
 		},
 		{
 			"title": "Native Apps",
@@ -111,7 +106,21 @@
 			"subTitle" : "In Progress",
 			"img": "/images/main/corona.png",
 			"skills": ["CoronaSDK","LUA","Photoshop","Illustrator","iOS","Android"],
-			"summary" : "I like to spend some of my free time making little games for iOS and Android.  It's a way for me to work on something smaller and to all aspects required for a game (coding, sound, graphics, etc.).  I have found that working in another language has also helped me learn some new ideas that have transferred to my other core coding languages."
+			"summary" : "I like to spend some of my free time making little games for iOS and Android.  It's a way for me to work on something smaller and to all aspects required for a game (coding, sound, graphics, etc.).  I have found that working in another language has also helped me learn some new ideas that have transferred to my other core coding languages.",
+			"screenFilenamePrefix": "app",
+			"screenType" : "png",
+			"screens": [
+					"Disneyland Trivia app home screen",
+					"Disneyland Trivia app trivia pack selection screen.",
+					"Disneyland Trivia app game play.  A user selects the correct answer as quickly as possible for the most points.",
+					"Santa Launcher game main menu.",
+					"Santa Launcher game play.  Users select the angle and how much power to fire Santa out of the cannon with.",
+					"Santa Launcher game play.  Santa bounces across rooftops.  Certain things will slow him down, others will blast him back up into the air.",
+					"Counting for Toddlers main screen",
+					"Counting for Toddlers game play where kids touch the items to count them.",
+					"Counting for Toddlers game play."
+
+			]
 		},
 		{
 			"title": "Trivia Builder",
@@ -119,7 +128,15 @@
 			"subTitle" : "Live",
 			"img" : "/images/main/list.svg",
 			"skills": ["AngularJS","PHP","API","REST","CSS3","Bootstrap","HTML5","Responsive","jQuery","Database"],
-			"summary" : "Trivia Builder is a utility site that helps me create trivia questions for my trivia based apps.  It has several features and functionality to make writing trivia questions and answers easy and simple.  It originally was written in jQuery but I upgraded it to AngularJS to help with my skills."
+			"summary" : "Trivia Builder is a utility site that helps me create trivia questions for my trivia based applications.  It has several features and functionality to make writing trivia questions and answers easy and simple.  It originally was written in jQuery but I upgraded it to AngularJS to help with my skills.",
+			"screens": [
+				"Selection screen where I can do simple CRUD operations for various trivia packs.",
+				"Interface to add new questions and answers and to view already entered items.",
+				"One of the questions opened showing the possible answers for that question.",
+				"Edit screen for a question.  There's also the ability to do Spanish translations of questions."
+			],
+			"screenFilenamePrefix": "trivia",
+			"screenType" : "png"
 		},
 		{
 			"title": "Expense Reporter",
@@ -127,7 +144,14 @@
 			"subTitle" : "Live",
 			"img": "/images/main/money.svg",
 			"skills": ["AngularJS","PHP","API","REST","CSS3","Bootstrap","HTML5","Responsive","jQuery","Database"],
-			"summary" : "A single page application that allows me to track my income and expenses related to side projects I do."
+			"summary" : "A single page application that allows me to track my income and expenses related to side projects I do.",
+			"screens": [
+				"Table view of expenses and income with form entry for new items.",
+				"Features easy to use CRUD operations as needed for new entry items.",
+				"Graph of income over time."
+			],
+			"screenFilenamePrefix": "budget",
+			"screenType" : "png"
 		}
 		,
 		{
@@ -146,15 +170,22 @@
 			"exampleUrl": "http://web.archive.org/web/20140130111809/http://www.yesterdaysbigthing.com/2014/01/30/",
 			"img": "/images/main/ybt.png",
 			"skills": ["Django","Responsive","CSS3","HTML5","Database","SEO","YouTube","API"],
-			"summary" : "Yesterday's Big Thing was a YouTube aggragator site.  It featured new videos across several categories everyday.  The admin interface was custom made and extremely easy to use.  The site ran for over 2 years before I decided to stop updating it because of time.  It can be viewed through the Way Back Machine. "
+			"summary" : "Yesterday's Big Thing was a YouTube aggregator site.  It featured new videos across several categories everyday.  The admin interface was custom made and extremely easy to use.  The site ran for over 2 years before I decided to stop updating it because of time.  It can be viewed through the Way Back Machine. ",
+			"screens": [
+				"Main landing page to view the biggest video on the web from yesterday.",
+				"Archive list down below the main video.",
+				"Form entry for anyone to submit a video to be considered.  Also wrote a bookmarklet that offered the same functionality from a bookmark."
+			],
+			"screenFilenamePrefix": "ybt",
+			"screenType" : "png"
 		},
 		{
-			"title": "Digital Nurse Practioner Software",
+			"title": "Digital Nurse Practitioner Software",
 			"url": "capstone",
 			"subTitle" : "Capstone Project",
 			"img": "/images/main/byu.svg",
 			"skills": ["Django","Responsive","CSS3","HTML5","Database","API"],
-			"summary" : "For our capstone project we worked with the graduate nursing program of BYU.  We worked with them as a client to solve the issue they had with massive amounts of paper documents.  We built a digitial nurse practioner evaluation platform for the project.  This allowed necessary parties to create, complete, and review evaluation forms.  We also provided the ability to view items offline as needed when traveling to locations without an internet connection."
+			"summary" : "For our capstone project we worked with the graduate nursing program of BYU.  We worked with them as a client to solve the issue they had with massive amounts of paper documents.  We built a digital nurse practitioner evaluation platform for the project.  This allowed necessary parties to create, complete, and review evaluation forms.  We also provided the ability to view items offline as needed when traveling to locations without an internet connection."
 		},
 		{
 			"title": "Portfolio",
@@ -162,7 +193,7 @@
 			"img": "/images/main/folder.svg",
 			"exampleUrl" : "https://github.com/Fernker/portfolio",
 			"skills": ["AngularJS","Responsive","CSS3","HTML5","JSON","Git"],
-			"summary" : "I needed a simple and clean portfolio to professionally showcase my work.  This was built with much love and care using AngularJS.  "
+			"summary" : "I needed a simple and clean portfolio to professionally showcase my work.  This was built with much love and care using AngularJS (~v1.4). "
 		}
 	],
 	"education": {

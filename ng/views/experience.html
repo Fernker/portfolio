@@ -13,9 +13,9 @@
 		</ul>
 	</section>
 
-	<section ng-if="projectCtrl.project.screens">
+	<section ng-if="experienceCtrl.experience.screens">
 		<h2 class="section-header">Screenshots</h2>
-		<photo-gallery gallery="experienceCtrl.experience.screens"></photo-gallery>
+		<photo-gallery gallery="experienceCtrl.experience.screens" prefix="{{experienceCtrl.experience.screenFilenamePrefix}}"></photo-gallery>
 	</section>
 
 	<section>

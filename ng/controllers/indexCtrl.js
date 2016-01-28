@@ -10,10 +10,6 @@
 			.then(function(data){
 
 				self.portfolio = data;
-
-				//Top 2 are featured
-				self.portfolio.a[0].featured = true;
-				self.portfolio.a[1].featured = true;
 			})
 
 

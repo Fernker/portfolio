@@ -10,7 +10,10 @@
 			controllerAs: 'photoGalleryCtrl',
 			bindToController: true,
 			scope: {
-			    gallery: '='
+			    gallery: '=',
+			    prefix: '@'
+
+
 			},
 			templateUrl: "ng/partials/photoGallery.html"
 		}
@@ -29,7 +32,7 @@
 				image.onload = function(){
 					self.loading = false;
 					if(typeof this.complete === false || this.naturalWidth === 0){
-						console.log('wut?');
+						//console.log('wut?');
 						deferred.reject();
 					}
 					deferred.resolve(image);
@@ -45,8 +48,9 @@
 			}
 
 			function getImage(index){
-				var request = self.gallery[index];
-				loadImage(request.url)
+				var request = "/images/shots/full/"+self.prefix+(index+1)+".png";//self.gallery[index];
+
+				loadImage(request)
 					.then(function(image){
 						self.viewingImage = request;
 						self.error = false;
@@ -55,10 +59,6 @@
 					})
 			}
 
-
-			self.showImage = function(index){
-
-			}
 
 			self.openGallery = function(index){
 				self.index = index;

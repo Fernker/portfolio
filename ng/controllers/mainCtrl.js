@@ -1,16 +1,11 @@
 (function(){
 	angular.module('portfolioApp')
-		.controller('mainCtrl',['portfolioData',mainCtrlFunc])
+		.controller('mainCtrl',[mainCtrlFunc])
 
 
-	function mainCtrlFunc(portfolioData){
+	function mainCtrlFunc(){
 		var self = this;
 		self.copyYear = new Date().getFullYear();
-
-		self.test = "Hi from Main Ctrl";
-
-
-
 
 	}
 })();

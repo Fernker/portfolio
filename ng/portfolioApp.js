@@ -41,6 +41,7 @@ angular.module('portfolioApp', ['ngSanitize','ngRoute'])
                 controllerAs: 'skillCtrl'
             })
 
+
             .otherwise({
                 redirectTo: '/'
             });

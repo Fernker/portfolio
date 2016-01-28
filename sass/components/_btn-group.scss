@@ -1,11 +1,11 @@
 
 
 .btn-group{
-	display: flex;
+	@include flexbox();
 	justify-content: center;
 
 	&--inline{
-		display: inline-flex;
+		@include inline-flexbox();
 	}
 
 

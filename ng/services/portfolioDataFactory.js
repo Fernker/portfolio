@@ -8,7 +8,7 @@
 
 		function getPortfolio(){
 			if(portfolio){
-				console.log('optimize');
+				//console.log('optimize');
 				return $q.when(portfolio);
 			}else{
 
@@ -23,7 +23,7 @@
 						portfolio.everything = portfolio.everything.concat(portfolio.b);
 
 						portfolio.skills = getSkills(portfolio);
-						console.log('interesting');
+						//console.log('interesting');
 						return portfolio;
 
 					})
@@ -116,7 +116,7 @@
 							count = 492;
 							break;
 						case 'Django':
-							count = 493;
+							count = 491;
 							break;
 					}
 					result.push({

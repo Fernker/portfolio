@@ -1,10 +1,7 @@
 <div class="gallery">
-	<!-- <div class="gallery__viewer">
-		<img class="gallery__viewer__img"  alt="{{photoGalleryCtrl.selected.caption}}" ng-src="{{photoGalleryCtrl.selected.url}}">
-	</div> -->
 	<div class="gallery__list" >
 		<div class="gallery__list__holder" ng-repeat="img in photoGalleryCtrl.gallery" ng-click="photoGalleryCtrl.openGallery($index)">
-			<img class="gallery__list__holder__img" ng-src="{{img.thumbnail}}"  >
+			<img class="gallery__list__holder__img" ng-src="/images/shots/thumb/{{photoGalleryCtrl.prefix}}{{$index + 1}}.png"  >
 		</div>
 		
 	</div>
@@ -18,10 +15,10 @@
 				<p class="viewer__content__error" ng-show="photoGalleryCtrl.error">There was an error with loading this image.  Please try another image.</p>
 				<div class="spinner viewer__content__spinner" ng-show="photoGalleryCtrl.loading && !photoGalleryCtrl.error"></div>
 				<div class="viewer__content__holder" ng-show="!photoGalleryCtrl.loading && !photoGalleryCtrl.error">
-					<img ng-src="{{photoGalleryCtrl.viewingImage.url}}" alt="" class="viewer__content__holder__img">
+					<img ng-src="{{photoGalleryCtrl.viewingImage}}" alt="" class="viewer__content__holder__img">
 				</div>
 				
-				<p class="viewer__content__caption" ng-show="!photoGalleryCtrl.loading && !photoGalleryCtrl.error">{{photoGalleryCtrl.viewingImage.caption}}</p>
+				<p class="viewer__content__caption" ng-show="!photoGalleryCtrl.loading && !photoGalleryCtrl.error">{{photoGalleryCtrl.gallery[photoGalleryCtrl.index + 1]}}</p>
 			</div>
 			<div class="viewer__next" ng-click="photoGalleryCtrl.switchImage(1)">&rsaquo;</div>
 

@@ -2,8 +2,9 @@
 	position: relative;
 	//background: grey;
 	max-width: 900px;
-	display: flex;
-	flex-wrap: wrap;
+	@include flexbox();
+	@include flex-wrap(wrap);
+	
 	margin: 0 auto;
 	padding: $padding;
 
@@ -30,7 +31,7 @@
 		
 		@include breakpoint('medium-up'){
 		    width: calc(100% - 120px - #{$padding});
-		    align-self: center;
+		    @include align-self('center');
 		    margin-left: $padding;
 		    margin-top: 0;
 		}
@@ -39,7 +40,8 @@
 	&__title{
 		margin: 3px 0;
 		width: calc(100% - 60px - #{$padding});
-		align-self: center;
+		@include align-self(center);
+		
 		margin-left: $padding;
 
 		@include breakpoint('small-up'){
@@ -48,7 +50,7 @@
 
 		@include breakpoint('medium-up'){
 			width: 100%;
-			order: -1;
+			@include flex-order(-1);
 			margin-left: 0;
 		}
 	}
