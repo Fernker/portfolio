@@ -21,7 +21,7 @@
 				"Trained other developers in related technologies as needed."
 			],
 			"screens": [
-				"Rebuilt University login page to be backed by Angular.",
+				"Rebuilt University login page that is backed by Angular.",
 				"Student's home page.  Originally this had 8 iFrames on the page.  Through the standardization projects that I led we were able to remove all iFrames for this page.",
 				"Study Plan app.  This is where the student spends all of there time studying.  This application was re-written in Angular with no impact on the student's learning experience.",
 				"Study Plan app.  Another shot of a tab in the application.  With the application re-write I was able to architecture the application correctly and to allow for future growth to the application.",
