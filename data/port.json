@@ -68,7 +68,7 @@
 			"img": "/images/main/byu.svg",
 			"timeframe": "2010 - 2012",
 			"skills": ["Django","Python", "mySQL","PostgreSQL","PHP","Drupal","CSS","HTML","JavaScript","jQuery","SVN","Apache"],
-			"summary" : "During my time as a web applications developer for the BYU Chemistry Department I was able to work on several exciting projects.  I was initially hired as a PHP developer to help maintain several PHP based applications.  I was cross trained in Django and spent most of my time with that technology stack.  During my time I was able to work closely with several faculty members to gather requirements, build base on requirements, and gather feedback during testing.",
+			"summary" : "During my time as a web applications developer for the BYU Chemistry Department I was able to work on several exciting projects.  I was initially hired as a PHP developer to help maintain several PHP based applications.  I was cross trained in Django and spent most of my time with that technology stack.  During my time I was able to work closely with several faculty members to gather requirements, develop, test, and gather feedback.",
 			"points" : [
 				"Supported custom Drupal modules for department needs.",
 				"Learned Django and wrote several applications with it for faculty members",
