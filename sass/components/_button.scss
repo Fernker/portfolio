@@ -11,9 +11,11 @@
 	background: none;
 	border-radius: 2px;
 	transition: background .2s linear, color .2s linear;
+	display: inline-block;
 
 	&:hover,
 	&:active{
+		text-decoration: none;
 		background: $color-blue;
 		color: #fff;
 	}
