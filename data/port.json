@@ -11,7 +11,7 @@
 			"points" : [
 				"Introduced new technologies such as AngularJS, Sass, GruntJS.",
 				"Created centralized and re-usable GruntJS based development stack with necessary tools needed for a wide variety of tasks.",
-				"Built Sass centric CSS framework of re-usable components to achieve a consistent brand for the students.",
+				"Built Sass centric CSS framework of reusable components to achieve a consistent brand for the students.",
 				"Rebuilt student portal with AngularJS and orchestrated multiple applications and parallel releases for minimal impact on the business.",
 				"Architected deployment processes, and server architecture for front-end related files.",
 				"Orchestrated front-end move to service oriented architecture with minimal impact to the students.",
