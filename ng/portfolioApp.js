@@ -46,6 +46,13 @@ angular.module('portfolioApp', ['ngSanitize','ngRoute'])
                 redirectTo: '/'
             });
     }])
+
+    .run(['$rootScope','$location','$window',function($rootScope,$location,$window){
+        $window.ga('create','UA-74460275-1','auto');
+        $rootScope.$on('$routeChangeSuccess',function(){
+            ga('send','pageview',$location.path());
+        })
+    }])
     
 // .config(function($resourceProvider) {
 //   $resourceProvider.defaults.stripTrailingSlashes = false;
