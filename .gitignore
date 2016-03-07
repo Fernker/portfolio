@@ -1,6 +1,7 @@
 node_modules/
 help/css/.sass-cache/
 
+build/*
 
 
 .DS_Store
