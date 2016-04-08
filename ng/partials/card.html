@@ -1,4 +1,4 @@
-<a ng-href="{{cardCtrl.buildUrl(cardCtrl.details)}}" class="card" ng-class="{'card--featured': cardCtrl.featured >= '0' || cardCtrl.featured <= '3'}" style="background-image: url({{cardCtrl.details.img}})">
+<a ng-href="{{cardCtrl.buildUrl(cardCtrl.details)}}" class="card" ng-class="{'card--featured': cardCtrl.featured == '0' || cardCtrl.featured == '1'}" style="background-image: url({{cardCtrl.details.img}})">
 	<div class="card__info">
 		<h3>{{cardCtrl.details.title}}</h3>
 		<small>{{cardCtrl.details.subTitle}}</small>

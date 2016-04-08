@@ -1,11 +1,20 @@
 {
 	"a": [
 		{
+			"title": "Cricut",
+			"subTitle": "Full Stack Engineer Front-End",
+			"url": "cricut",
+			"img" : "/images/main/cricut.png",
+			"timeframe": "2016 - Current",
+			"skills" : ["AngularJS","JavaScript","NodeJS","MongoDB","TypeScript"],
+			"summary" : " "
+			},
+		{
 			"title": "Western Governors University",
 			"subTitle": "Tech Lead, Senior UI/UX Developer",
 			"url": "western-governors-university",
 			"img": "/images/main/wgu.svg",
-			"timeframe": "2013 - Current",
+			"timeframe": "2013 - 2016",
 			"skills": ["AngularJS","JavaScript","jQuery","Git", "CSS3","Sass","HTML5","GruntJS","npm","svg","Responsive", "Photoshop","svg icons","Agile","Apache","JSON","API","REST","Karma","JasmineJS","Unit Tests","Protractor","SVN","Liferay","Ping Access","Hiring"],
 			"summary" : "I was hired at WGU as the first UI developer on a new UI/UX team.  WGU had a student portal that was built on older technologies and wasn't able to scale.  I was tasked with moving the front-end to a more scalable solution for future student growth.",
 			"points" : [
